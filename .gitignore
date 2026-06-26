@@ -1,0 +1,43 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# --- Virtual environment ---
+venv/
+.venv/
+env/
+
+# --- Environment / secrets ---
+.env
+
+# --- Database ---
+autoinsight.db
+*.sqlite3
+
+# --- Runtime data (keep folder structure, ignore generated content) ---
+data/raw/*
+data/cleaned/*
+data/models/*
+data/reports/*
+data/plots/*
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!data/models/.gitkeep
+!data/reports/.gitkeep
+!data/plots/.gitkeep
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
