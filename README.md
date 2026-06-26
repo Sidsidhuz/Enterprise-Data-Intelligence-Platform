@@ -67,6 +67,25 @@ Built with **FastAPI** + **Streamlit** + **scikit-learn** + **XGBoost** + **Ligh
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard & History
+![Dashboard](docs/screenshots/00_dashboard.png)
+
+### Upload & Preview
+![Upload](docs/screenshots/01_upload_preview.png)
+
+### Data Cleaning & EDA
+![Cleaning & EDA](docs/screenshots/02_cleaning_eda.png)
+
+### AutoML Training Console
+![AutoML Training](docs/screenshots/03_automl_training.png)
+
+### Leaderboard & SHAP Explanations
+![Leaderboard](docs/screenshots/04_leaderboard_shap.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -92,7 +111,7 @@ Built with **FastAPI** + **Streamlit** + **scikit-learn** + **XGBoost** + **Ligh
 ```bash
 # 1. Clone the repo
 git clone https://github.com/Sidsidhuz/Enterprise-Data-Intelligence-Platform.git
-cd autoinsight
+cd Enterprise-Data-Intelligence-Platform
 
 # 2. Create virtual environment
 python -m venv venv

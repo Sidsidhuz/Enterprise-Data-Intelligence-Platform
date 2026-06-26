@@ -14,8 +14,11 @@ env/
 .env
 
 # --- Database ---
-autoinsight.db
+*.db
 *.sqlite3
+
+# --- CatBoost training artifacts ---
+catboost_info/
 
 # --- Runtime data (keep folder structure, ignore generated content) ---
 data/raw/*
@@ -41,3 +44,4 @@ htmlcov/
 # --- OS ---
 .DS_Store
 Thumbs.db
+
