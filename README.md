@@ -91,7 +91,7 @@ Built with **FastAPI** + **Streamlit** + **scikit-learn** + **XGBoost** + **Ligh
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/autoinsight.git
+git clone https://github.com/Sidsidhuz/Enterprise-Data-Intelligence-Platform.git
 cd autoinsight
 
 # 2. Create virtual environment
