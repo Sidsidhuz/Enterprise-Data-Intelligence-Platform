@@ -695,17 +695,6 @@ elif menu == "Leaderboard & Explanations":
         d_id = d_completed[selected_d]
 
         # Fetch last completed training job details
-        # Let's hit the health check or list jobs. Wait, we can query details by fetching datasets or jobs list.
-        # Since datasets router doesn't list jobs directly, we'll need to look at latest training job for this dataset.
-        # To make it simple, let's query training job ID directly using the dataset ID.
-        # Wait, how does the UI know the training job ID? We can fetch it by querying the database.
-        # But we don't have a list-jobs endpoint. We can hit the dataset details or list models.
-        # Wait, the training job ID is saved in our database. Let's write an endpoint or let's look up models.
-        # Actually, let's query the training-jobs details directly. We can iterate job IDs starting from 1 to find the latest job for this dataset_id!
-        # This is a local-only simple search, or we can add a small endpoint.
-        # Let's inspect the models. Each model belongs to a training job.
-        # Let's write a simple search: we can fetch job details for job_id = 1, 2, 3... until we get the highest completed one.
-        # That's easy because IDs are sequential!
         # Use the list endpoint filtered by dataset_id and pick the latest completed/failed job
         all_jobs = api_request("GET", f"/training-jobs?dataset_id={d_id}") or []
         latest_job = next((j for j in all_jobs if j["status"] in ["completed", "failed", "running", "queued"]), None)
